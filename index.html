@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cinethon</title>
+<link href="css/framework7.bundle.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<div id="app">
+		<div class="view view-main view-init">
+
+			<!-- Menú Lateral -->
+			<section class="panel panel-left panel-cover">
+			
+				<div class="panel-info">
+					<span class="material-icons">account_circle</span>
+					<h4>Mi Perfil</h4>
+				</div>
+				
+				<div class="list">
+				  <ul>
+					<li>
+					  <a href="/home/" class="item-content panel-close">
+						<div class="item-media"><i class="material-icons">home</i></div>
+						<div class="item-inner">
+						  <div class="item-title">Inicio</div>
+						</div>
+					  </a>
+					</li>
+					<li>
+					  <a href="/promociones/" class="item-content panel-close">
+						<div class="item-media"><i class="material-icons">card_giftcard</i></div>
+						<div class="item-inner">
+						  <div class="item-title">Promociones</div>
+						</div>
+					  </a>
+					</li>
+					<li>
+					  <a href="/categorias/" class="item-content panel-close">
+						<div class="item-media"><i class="material-icons">drag_indicator</i></div>
+						<div class="item-inner">
+						  <div class="item-title">Categorías</div>
+						</div>
+					  </a>
+					</li>
+					<li>
+					  <a href="/mis-peliculas/" class="item-content panel-close">
+						<div class="item-media"><i class="material-icons">grade</i></div>
+						<div class="item-inner">
+						  <div class="item-title">Mis Películas</div>
+						</div>
+					  </a>
+					</li>
+					  <li>
+					  <a href="/perfil/" class="item-content panel-close">
+						<div class="item-media"><i class="material-icons">groups</i></div>
+						<div class="item-inner">
+						  <div class="item-title">Perfil</div>
+						</div>
+					  </a>
+					</li>
+					  <li>
+					  <a href="/salir/" class="item-content panel-close">
+						<div class="item-media"><i class="material-icons">logout</i></div>
+						<div class="item-inner">
+						  <div class="item-title">Salir</div>
+						</div>
+					  </a>
+					</li>
+				  </ul>
+				</div>
+				
+			</section>
+			
+			
+			<section data-name="home" class="page">
+
+				<!-- Top Navbar -->
+				<nav class="navbar">
+				<div class="navbar-bg"></div>
+				<div class="navbar-inner">
+					<div class="title">Cinethon</div>
+					<div class="right">
+						<a href="#" class="link panel-open" data-panel=".panel-left"><span class="material-icons">menu</span>
+						</a>
+					</div>
+				</div>
+				</nav>
+
+				
+
+				<section class="page-content">					
+					<div class="row">
+						<article class="col">
+							<h4 class="block-title block-title-medium">En taquilla:</h4>
+						</article>
+					</div>
+					
+					<div class="swiper-container swiper-init" data-slides-per-view="4">
+						<div class="swiper-wrapper">
+					
+					<article class="swiper-slide">
+                        <div class="card">						
+                        <div class="card-content">
+                         <img src="img/cruella.jpg" class="img-fluid" alt="cruella">
+							<p>Cruella</p>
+							<p>Categoria: Musical</p>
+							<p>Precio: $9.99</p>
+							<p>Calificacion: 8/10</p>
+                        </div>
+                        </div>
+                    </article>
+					
+					<article class="swiper-slide">
+                        <div class="card">						
+                        <div class="card-content">
+                          <img src="img/black-widow.jpg" class="img-fluid" alt="black-widow">
+							<p>Black Widow</p>
+							<p>Categoria: Musical</p>
+							<p>Precio: $9.99</p>
+							<p>Calificacion: 8/10</p>
+                        </div>
+                        </div>
+                    </article>
+					
+					<article class="swiper-slide">
+                         <div class="card">						
+                         <div class="card-content">
+                            <img src="img/house-of-gucci.jpg" class="img-fluid" alt="house">
+							 <p>House of Gucci</p>
+							<p>Categoria: Misterio</p>
+							<p>Precio: $9.99</p>
+							<p>Calificacion: 8/10</p>
+                         </div>
+                         </div>
+                    </article>
+
+                    <article class="swiper-slide">
+                       <div class="card">						
+                       <div class="card-content">
+                       <img src="img/.jpg" class="img-fluid" alt="encanto">
+						   <p>Encanto</p>
+							<p>Categoria: Misterio</p>
+							<p>Precio: $9.99</p>
+							<p>Calificacion: 8/10</p>
+						</div>
+					  </div>
+                    </article>
+							
+					</div>
+					</div>
+								
+					<article class="block">
+						<a href="/mis-peliculas/" class="button button-fill button-small">Mis Peliculas</a>
+					</article>
+					
+					<article class="block">
+						<img src="img/pre.png" alt="pre-producción" class="img-fluid">
+						<p>Pre-producción</p>
+						<p>Es la etapa de planificación, en la que se define el proyecto, se realiza la investigación sobre el tema elegido, se establece un primer guión y el correspondiente plan de rodaje.</p>
+					</article>
+					
+					<article class="block">
+						<img src="img/produ.png" alt="pre-producción" class="img-fluid">
+						<p>Producción</p>
+						<p>Se refiere al proceso general de creación de una obra audiovisual, es decir, a toda la actividad que empieza con la idea y termina con la obtención de la copia estándar.</p>
+					</article>
+					
+					<article class="block">
+						<img src="img/post.png" alt="pre-producción" class="img-fluid">
+						<p>Post-Producción</p>
+						<p>Es el trabajo de edición que se lleva a cabo sobre un contenido audiovisual, digital o analógico después de ser producido.</p>
+					</article>
+					
+					<hr>
+					
+				</section>
+				
+				
+				
+				
+					
+					
+				
+				
+			</section> <!-- /page-content-->
+			
+			<!-- Bottom Navbar -->
+            <nav class="toolbar toolbar-bottom">
+              <div class="toolbar-inner">
+                <a href="/home/" class="link">
+                  <span class="material-icons">home</span>					 
+                </a>
+                <a href="#" class="link">
+                  <span class="material-icons">favorite_border</span>					  
+                </a>
+                <a href="#" class="link">
+                  <span class="material-icons">notifications_none</span>					  
+                </a>
+                <a href="#" class="link">
+                  <span class="material-icons">shopping_cart</span>					  
+                </a>
+                <a href="#" class="link">
+                  <span class="material-icons">person_outline</span>					  
+                </a>
+              </div>
+            </nav>
+			
+		</div><!-- /view-->
+	</div><!-- /app -->
+	
+	
+	
+<section class="login-screen modal-in" id="login">
+	<div class="view">
+      <section class="page">
+        <div class="page-content login-screen-content">
+          	<div class="login-screen-title">
+				<img src="img/logoblanco.png" alt="logo" class="img-fluid">
+				<h6>Disfruta nuestro catálogo de películas</h6>
+			</div>
+          <form id="form-login">
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Email</div>
+                    <div class="item-input-wrap">
+                      <input type="email" name="email" placeholder="Tu email" required>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Contraseña</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="Contraseña" placeholder="Tu contraseña" required>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list block">
+              <ul>
+                <li><button type="submit" class="button button-fill" id="btnLogin">Entrar</button></li>
+              </ul>
+              <div class="block-footer">
+                <p>¿No tenés una cuenta? <a href="#" class="link login-screen-open" data-login-screen="#signup">Crea una cuenta</a></p>
+                <p><a class="link login-screen-close" href="#">o continua como invitado</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section> <!-- /page -->
+    </div>
+</section><!-- /login-screen -->
+
+	
+	
+<section class="login-screen" id="signup" style="z-index: 99999;">
+	<div class="view">
+      <section class="page">
+        <div class="page-content login-screen-content">
+          	<div class="login-screen-title">
+				Crear una cuenta
+			</div>
+          <form>
+            <div class="list">
+              <ul>
+				<li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Nombre</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="name" placeholder="Your name" required>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Email</div>
+                    <div class="item-input-wrap">
+                      <input type="email" name="email" placeholder="Your email" required>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Contraseña</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" placeholder="Your password" required>
+                    </div>
+                  </div>
+                </li>
+				<li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Confirmar contraseña</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="confpassword" placeholder="Your password" required>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list block">
+              <ul>
+                <li><button type="submit" class="button button-fill" id="btnSignUp">Entrar</button></li>
+              </ul>
+              <div class="block-footer">
+                <p><a class="link login-screen-close" href="#">Cancelar</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section> <!-- /page -->
+    </div>
+</section><!-- /login-screen -->
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js"></script>
+	
+</body>
+</html>
